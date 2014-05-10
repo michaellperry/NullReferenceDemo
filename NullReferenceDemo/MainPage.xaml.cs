@@ -43,6 +43,12 @@ namespace NullReferenceDemo
             // Windows.Phone.UI.Input.HardwareButtons.BackPressed event.
             // If you are using the NavigationHelper provided by some templates,
             // this event is handled for you.
+
+            System.Net.NetworkInformation.NetworkChange.NetworkAddressChanged += NetworkChange_NetworkAddressChanged;
+        }
+
+        void NetworkChange_NetworkAddressChanged(object sender, EventArgs e)
+        {
         }
     }
 }
