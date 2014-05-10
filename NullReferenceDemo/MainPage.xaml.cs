@@ -44,6 +44,7 @@ namespace NullReferenceDemo
             // If you are using the NavigationHelper provided by some templates,
             // this event is handled for you.
 
+            System.Net.NetworkInformation.NetworkInterface.GetIsNetworkAvailable();
             System.Net.NetworkInformation.NetworkChange.NetworkAddressChanged += NetworkChange_NetworkAddressChanged;
         }
 
